@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ced8e1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* basic----------------------- */
+
+/* header---------------------- */
+header {
+    width: 100%;
+}
+
+header .content-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #102b3e;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+header .content-top .item-content-top i,
+header .content-top .item-content-top p {
+    color: #1cc8a0;
+}
+
+header .content-top .item-content-top p {
+    font-style: italic;
+}
+
+header .content-top .item-content-top {
+    width: 50%;
+    padding: 5px 50px;
+}
+
+header .content-top .item-content-top:last-child {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+
+
+header .navigation {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+header .logo-web,
+header nav {
+    width: 50%;
+    padding: 20px 50px;
+    font-weight: bold;
+}
+
+header .logo-web .Logo {
+    width: 25%;
+    height: 50px;
+    background-color: #102b3e;
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav a {
+    color: #102b3e;
+}
+
+.responsive-nav {
+    display: none;
+    z-index: 99;
+}
+
+.responsive-nav.active {
+    background-color: #ced8e1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 99;
+}
+
+.responsive-nav a {
+    text-align: center;
+    width: 100%;
+    color: #102b3e;
+    font-weight: 300;
+    transition: 0.5s;
+    padding: 20px 0;
+}
+
+.responsive-nav a:hover {
+    color: #FF1700;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1cc8a0;
+    border-radius: 7px;
+}
+
+
+
+header .jumbotron {
+    background-color: #102b3e;
+    width: 100%;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .jumbotron .text-wellcome {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -2%;
+}
+
+header .jumbotron .text-wellcome h1 {
+    color: #1cc8a0;
+}
+
+header .jumbotron .text-wellcome button {
+    background-color: #1cc8a0;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+header .jumbotron .BoxImageJumbotron {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: -15%;
+}
+
+header .jumbotron .BoxImageJumbotron .ItemBoxImageJumbotron {
+    width: 25%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #1cc8a0;
+}
+
+/* header end---------------------- */
+
+/* title------------------- */
+.Title {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #1cc8a0;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 70px;
+}
+
+/* title end------------------- */
+
+/* main---------------------- */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    justify-content: space-between;
+}
+
+main .BoxItemMain {
+    border: 2px solid #102b3e;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+main .ItemMain {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main .ItemMain .ImgMain {
+    background-color: #102b3e;
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+}
+
+main .ItemMain .DateMain {
+    width: 100%;
+    padding: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #102b3e;
+}
+
+main .ItemMain .TitleMain {
+    width: 100%;
+    padding: 10px 0;
+}
+
+main .ActionMain {
+    border-top: 2px solid #102b3e;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .ActionMain button {
+    background-color: #1cc8a0;
+    color: #ced8e1;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: none;
+}
+
+main .ActionMain ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* main end---------------------- */
+
+
+/* category------------------------ */
+.Category {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.Category .ItemCategory {
+    background-color: #102b3e;
+    width: 23%;
+    height: 200px;
+}
+
+.Category .ItemCategory:nth-child(even) {
+    background-color: #1cc8a0;
+}
+
+/* category end------------------------ */
+
+
+/* owner------------------------------ */
+.Owner {
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Owner .ItemOwner {
+    width: 30%;
+    padding: 1rem;
+}
+
+.Owner .ItemOwner:nth-child(3) .ImgOwner {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.Owner .ImgOwner {
+    background-color: #102b3e;
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.Owner .DescriptOwner {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* owner end------------------------------ */
+
+
+/* footer--------------------------- */
+footer {
+    background-color: #102b3e;
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+}
+
+footer .ItemFooter {
+    width: 20%;
+    padding: 10px;
+    height: 250px;
+    color: #ced8e1;
+    padding: 50px 0 0 30px;
+}
+
+footer .ItemFooter ul {
+    margin-top: 10px;
+}
+
+footer .ItemFooter ul li {
+    margin-top: 5px;
+}
+
+footer .ItemFooter:first-child {
+    width: 40%;
+    color: #ced8e1;
+    padding: 50px 0 0 100px;
+    font-size: 0.9rem;
+}
+
+footer .ItemFooter:first-child ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+/* footer end--------------------------- */
+
+
+
+
+/* -------------Responsive---------------- */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    header .logo-web .Logo {
+        width: 40%;
+    }
+
+    main .BoxItemMain {
+        width: 45%;
+    }
+
+    .Owner .ItemOwner:nth-child(3) .ImgOwner {
+        width: 170px;
+        height: 170px;
+    }
+
+    .Owner .ImgOwner {
+        width: 150px;
+        height: 150px;
+        margin-top: 90px;
+    }
+
+    footer .ItemFooter {
+        padding: 50px 0 0 10px;
+    }
+
+    footer .ItemFooter:first-child {
+        padding: 50px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    header .content-top {
+        font-size: 0.6rem;
+    }
+
+    header .content-top .item-content-top {
+        padding: 5px 20px;
+    }
+
+    header .content-top .item-content-top:last-child {
+        gap: 10px;
+    }
+
+    header .logo-web,
+    header nav {
+        padding: 20px 20px;
+    }
+
+    header .logo-web .Logo {
+        width: 100%;
+    }
+
+    header .navigation {
+        align-items: center;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #102b3e;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #102b3e;
+    }
+
+    header .jumbotron .text-wellcome {
+        width: 90%;
+    }
+
+    header .jumbotron .BoxImageJumbotron {
+        display: none;
+    }
+
+
+
+    main {
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    main .BoxItemMain {
+        width: 90%;
+    }
+
+
+
+    .Category {
+        justify-content: center;
+    }
+
+    .Category .ItemCategory {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+
+    .Owner {
+        justify-content: center;
+    }
+
+    .Owner .ItemOwner {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer .ItemFooter {
+        width: 100%;
+    }
+
+    footer .ItemFooter:first-child {
+        width: 100%;
+        color: #ced8e1;
+        padding: 50px 0 0 30px;
+        font-size: 0.9rem;
+    }
+}
